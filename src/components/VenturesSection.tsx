@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   ShoppingCart,
@@ -123,19 +124,32 @@ function VentureCard({ venture, index }: { venture: Venture; index: number }) {
 
           {/* Business Logo Header inside image matching template */}
           <div className="absolute bottom-4 left-4 right-4 flex items-center gap-2.5">
-            <div className="w-10 h-10 rounded-xl bg-white/95 backdrop-blur-md flex items-center justify-center shadow-md shrink-0">
-              <span className={`font-black text-xl font-heading ${customLogo.logoIconColor}`}>
-                {venture.name.charAt(0)}
-              </span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-heading font-black text-xl sm:text-2xl text-white tracking-tight leading-none drop-shadow-md">
-                {customLogo.logoTitle}
-              </span>
-              <span className="text-[10px] font-black tracking-[0.2em] text-emerald-300 uppercase leading-tight mt-0.5">
-                {customLogo.logoSub}
-              </span>
-            </div>
+            {venture.id === "subh-greenz" ? (
+              <div className="relative w-44 h-12">
+                <Image
+                  src="/images/subh-greenz-logo-transparent.png"
+                  alt="subh Greenz HYPER MARKET"
+                  fill
+                  className="object-contain object-left filter drop-shadow-lg"
+                />
+              </div>
+            ) : (
+              <>
+                <div className="w-10 h-10 rounded-xl bg-white/95 backdrop-blur-md flex items-center justify-center shadow-md shrink-0">
+                  <span className={`font-black text-xl font-heading ${customLogo.logoIconColor}`}>
+                    {venture.name.charAt(0)}
+                  </span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-heading font-black text-xl sm:text-2xl text-white tracking-tight leading-none drop-shadow-md">
+                    {customLogo.logoTitle}
+                  </span>
+                  <span className="text-[10px] font-black tracking-[0.2em] text-emerald-300 uppercase leading-tight mt-0.5">
+                    {customLogo.logoSub}
+                  </span>
+                </div>
+              </>
+            )}
           </div>
         </div>
 
@@ -150,13 +164,13 @@ function VentureCard({ venture, index }: { venture: Venture; index: number }) {
           </p>
 
           <div className="pt-2">
-            <a
-              href="#contact"
+            <Link
+              href={venture.href || "/contact"}
               className={`inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full text-white text-xs font-bold transition-all shadow-md group-hover:scale-105 ${venture.buttonBg}`}
             >
               <span>{venture.buttonText}</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

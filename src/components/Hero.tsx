@@ -23,19 +23,22 @@ export default function Hero() {
       id="hero"
       className="relative min-h-[85vh] lg:min-h-[92vh] pt-32 pb-20 flex items-center bg-[#fbfbf8] text-[#111827] overflow-hidden"
     >
-      {/* Exact User Provided Hero Section Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/hero-agri-bg.png"
-          alt="Subhashini Industries Hero Export Banner"
-          fill
-          priority
-          className="object-cover object-center"
-        />
+      {/* Hero Section Background Video with Poster Fallback */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/images/hero-agri-bg.png"
+          className="w-full h-full object-cover object-center"
+        >
+          <source src="/videos/hero-video.mp4" type="video/mp4" />
+        </video>
 
-        {/* Subtle left gradient overlay ensuring 100% crisp black text legibility over the farm landscape */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent w-full lg:w-3/5" />
-        <div className="absolute inset-0 bg-gradient-to-t from-white/50 via-transparent to-white/30" />
+        {/* Subtle left gradient overlay ensuring 100% crisp text legibility */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent w-full lg:w-3/5" />
+        <div className="absolute inset-0 bg-gradient-to-t from-white/50 via-transparent to-white/20" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">

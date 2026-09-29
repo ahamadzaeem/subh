@@ -8,6 +8,7 @@ export interface Venture {
   themeColor: string;
   buttonText: string;
   buttonBg: string;
+  href?: string;
   image: string;
   features: {
     iconName: string;
@@ -115,6 +116,7 @@ export const VENTURES_DATA: Venture[] = [
     themeColor: "from-[#0b3322] to-[#155c3d]",
     buttonText: "Visit Subha Greenz",
     buttonBg: "bg-[#0b3322] hover:bg-[#155c3d]",
+    href: "/subh-greenz",
     image: "/images/subh-greenz-banner.jpg",
     features: [
       { iconName: "ShoppingCart", label: "Wide Range" },
@@ -134,6 +136,7 @@ export const VENTURES_DATA: Venture[] = [
     themeColor: "from-[#991b1b] to-[#dc2626]",
     buttonText: "Visit Shiva Exporting",
     buttonBg: "bg-[#b91c1c] hover:bg-[#991b1b]",
+    href: "/contact",
     image: "/images/shiva-exporting-banner.jpg",
     features: [
       { iconName: "Globe", label: "Global Export" },
@@ -153,6 +156,7 @@ export const VENTURES_DATA: Venture[] = [
     themeColor: "from-[#0f2942] to-[#1e3a5f]",
     buttonText: "Visit Subhashini Tower",
     buttonBg: "bg-[#0f2942] hover:bg-[#1e3a5f]",
+    href: "/contact",
     image: "/images/subhashini-tower-banner.jpg",
     features: [
       { iconName: "ShoppingBag", label: "Shopping Spaces" },

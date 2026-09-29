@@ -13,12 +13,12 @@ export default function Footer() {
           {/* Col 1: Brand Info */}
           <div className="lg:col-span-2 flex flex-col items-start gap-4">
             <div className="flex items-center gap-3">
-              <div className="relative w-9 h-9 rounded-lg overflow-hidden bg-black flex items-center justify-center border border-black shadow-sm">
+              <div className="relative w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center">
                 <Image
-                  src="/images/logo.png"
-                  alt="Subhashini Industries Logo"
+                  src="/new-logo.png"
+                  alt="Subhashini Enterprises Logo"
                   fill
-                  className="object-contain p-0.5"
+                  className="object-contain"
                 />
               </div>
 
@@ -91,42 +91,27 @@ export default function Footer() {
             </h4>
             <ul className="flex flex-col gap-2 text-xs text-[#4a5951]">
               <li>
-                <a href="#hero" className="hover:text-[#0b3322] transition-colors">
+                <a href="/" className="hover:text-[#0b3322] transition-colors">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:text-[#0b3322] transition-colors">
+                <a href="/about" className="hover:text-[#0b3322] transition-colors font-medium">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#ventures" className="hover:text-[#0b3322] transition-colors">
+                <a href="/#ventures" className="hover:text-[#0b3322] transition-colors">
                   Our Businesses
                 </a>
               </li>
               <li>
-                <a href="#products" className="hover:text-[#0b3322] transition-colors">
-                  Products
+                <a href="/careers" className="hover:text-[#0b3322] transition-colors font-medium">
+                  Careers
                 </a>
               </li>
               <li>
-                <a href="#sustainability" className="hover:text-[#0b3322] transition-colors">
-                  Sustainability
-                </a>
-              </li>
-              <li>
-                <a href="#gallery" className="hover:text-[#0b3322] transition-colors">
-                  Gallery
-                </a>
-              </li>
-              <li>
-                <a href="#news" className="hover:text-[#0b3322] transition-colors">
-                  News & Updates
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="hover:text-[#0b3322] transition-colors">
+                <a href="/contact" className="hover:text-[#0b3322] transition-colors font-medium">
                   Contact Us
                 </a>
               </li>
