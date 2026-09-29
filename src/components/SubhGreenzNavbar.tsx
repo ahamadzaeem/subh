@@ -12,7 +12,7 @@ export default function SubhGreenzNavbar() {
   const [businessesOpen, setBusinessesOpen] = useState(false);
 
   const businessItems = [
-    { label: "Subh Greenz Hypermarket", href: "/subh-greenz" },
+    { label: "Subhashini Enterprises", href: "/" },
     { label: "Shiva Exporting", href: "/#ventures" },
     { label: "Subhashini Tower", href: "/#ventures" },
   ];
