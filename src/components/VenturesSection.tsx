@@ -72,7 +72,7 @@ export default function VenturesSection() {
           </h2>
 
           <p className="text-xs sm:text-sm text-[#4a5951] leading-relaxed max-w-2xl mt-1">
-            Subhashini Industries and its group of businesses work together to deliver quality, value and growth across global markets and local communities.
+            Subhashini Enterprises and its group of businesses work together to deliver quality, value and growth across global markets and local communities.
           </p>
         </div>
 

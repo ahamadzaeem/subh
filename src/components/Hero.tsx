@@ -63,7 +63,7 @@ export default function Hero() {
           >
             <h1 className="font-heading text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[0.98] text-[#111827]">
               SUBHASHINI <br />
-              INDUSTRIES <span className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#111827]">PVT. LTD</span>
+              ENTERPRISES
             </h1>
           </motion.div>
 

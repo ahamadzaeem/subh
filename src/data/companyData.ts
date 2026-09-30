@@ -49,10 +49,10 @@ export interface Milestone {
 }
 
 export const COMPANY_INFO = {
-  name: "Subhashini Industries Pvt. Ltd.",
+  name: "Subhashini Enterprises",
   tradeName: "SUBHASHINI ENTERPRISES",
   eyebrow: "GLOBAL REACH | FRESH PRODUCE | SUSTAINABLE GROWTH",
-  heroTitle: "SUBHASHINI INDUSTRIES PVT. LTD.",
+  heroTitle: "SUBHASHINI ENTERPRISES",
   heroSubheading: "Connecting Freshness to the World",
   heroDescription:
     "A diversified business group focused on global agri exports, modern retail, commercial spaces and sustainable growth.",
@@ -66,8 +66,8 @@ export const COMPANY_INFO = {
     fullAddress: "St. Joseph Building, Vaikom, Alappuzha, Kerala, India",
   },
   contact: {
-    email: "info@subhashiniindustries.com",
-    emailExport: "export@subhashiniindustries.com",
+    email: "info@subhashinienterprises.com",
+    emailExport: "export@subhashinienterprises.com",
     phone: "+91 12345 67890",
     mobile: "+91 94471 23456",
     whatsapp: "+911234567890",

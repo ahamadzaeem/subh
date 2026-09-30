@@ -27,7 +27,7 @@ export default function Footer() {
                   Subhashini
                 </span>
                 <span className="text-[10px] font-black tracking-[0.2em] text-[#0b3322] uppercase leading-tight mt-0.5">
-                  INDUSTRIES PVT. LTD.
+                  ENTERPRISES
                 </span>
               </div>
             </div>
@@ -166,7 +166,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#4a5951]">
-          <p>© 2024 Subhashini Industries Pvt. Ltd. All rights reserved.</p>
+          <p>© 2024 Subhashini Enterprises. All rights reserved.</p>
 
           <div className="flex items-center gap-6">
             <a href="#" className="hover:text-[#0b3322] transition-colors">
