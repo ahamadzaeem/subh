@@ -33,7 +33,7 @@ export default function Hero() {
           poster="/images/hero-agri-bg.png"
           className="w-full h-full object-cover object-center"
         >
-          <source src="/videos/hero-video.mp4" type="video/mp4" />
+          <source src="/videos/hero-enterprise-video.mp4" type="video/mp4" />
         </video>
 
         {/* Subtle left gradient overlay ensuring 100% crisp text legibility */}
