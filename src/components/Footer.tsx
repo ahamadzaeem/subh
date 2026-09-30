@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { MapPin, Mail, Phone } from "lucide-react";
 import { COMPANY_INFO } from "@/data/companyData";
 
@@ -12,25 +13,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-[#e8e4d8]">
           {/* Col 1: Brand Info */}
           <div className="lg:col-span-2 flex flex-col items-start gap-4">
-            <div className="flex items-center gap-3">
-              <div className="relative w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center">
-                <Image
-                  src="/new-logo.png"
-                  alt="Subhashini Enterprises Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-
-              <div className="flex flex-col">
-                <span className="font-heading font-black text-lg tracking-tight text-[#0b3322] leading-none">
-                  Subhashini
-                </span>
-                <span className="text-[10px] font-black tracking-[0.2em] text-[#0b3322] uppercase leading-tight mt-0.5">
-                  ENTERPRISES
-                </span>
-              </div>
-            </div>
+            <Link href="/" className="relative block h-16 sm:h-20 w-56 sm:w-72">
+              <Image
+                src="/images/logo-enterprises-updated.png"
+                alt="Subhashini Enterprises Logo"
+                fill
+                className="object-contain object-left"
+              />
+            </Link>
 
             <p className="text-xs sm:text-sm text-[#4a5951] leading-relaxed max-w-sm">
               A diversified business group focused on global agri exports, modern retail, commercial spaces and sustainable growth.

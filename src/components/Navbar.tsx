@@ -106,7 +106,7 @@ export default function Navbar() {
             className="relative block h-16 sm:h-24 md:h-28 lg:h-32 w-44 sm:w-72 md:w-80 lg:w-96 shrink-0 group transition-transform duration-300 hover:scale-105"
           >
             <Image
-              src="/new-logo.png"
+              src="/images/logo-enterprises-updated.png"
               alt="Subhashini Enterprises Logo"
               fill
               priority
